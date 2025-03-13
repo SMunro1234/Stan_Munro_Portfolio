@@ -1,0 +1,53 @@
+{
+
+	"num_iterations":100000,
+	"timestep": 0.001,
+	"grav_constant": 1.18638e-4,
+	
+
+	"bodies":
+	[
+		{
+			"name": "sun", 
+			"mass": 332946.0,
+			"orbital_radius":0.0,
+			"colour": "y",
+			"Rotational Period":0
+		},
+		{
+			"name": "mercury", 
+			"mass": 0.1,
+			"orbital_radius":0.387,
+			"colour": "gray",
+			"Rotational Period": 0.241
+		},
+		{
+			"name": "venus", 
+			"mass": 0.82,
+			"orbital_radius":0.723,
+			"colour": "orange",
+			"Rotational Period": 0.615
+		},
+		{
+			"name": "earth", 
+			"mass": 1,
+			"orbital_radius":1.0,
+			"colour": "b",
+			"Rotational Period": 1
+		},
+		{
+			"name": "mars", 
+			"mass": 0.11,
+			"orbital_radius":1.524,
+			"colour": "r",
+			"Rotational Period": 1.881
+		},
+		{
+			"name": "jupiter", 
+			"mass": 318,
+			"orbital_radius":5.2,
+			"colour": "silver",
+			"Rotational Period": 11.859
+		}
+	]
+}
