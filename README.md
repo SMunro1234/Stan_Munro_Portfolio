@@ -1,6 +1,7 @@
 #Stan Munro Portfolio
+
 Overview
-Welcome to my GitHub portfolio! This repository showcases a collection of projects that highlight my expertise in physics, programming, and data analysis. Each project demonstrates my ability to solve complex problems using computational methods, numerical simulations, and automation tools. Below, you’ll find descriptions of the key projects included in this portfolio.
+Welcome to my GitHub portfolio! This repository showcases a collection of projects highlighting my expertise in physics, programming, and data analysis. Each project demonstrates my ability to solve complex problems using computational methods, numerical simulations, and automation tools. Below are descriptions of the key projects included in this portfolio.
 
 Contents
 Projects
