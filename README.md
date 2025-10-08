@@ -24,38 +24,43 @@ This portfolio contains a variety of projects that reflect my academic and profe
 
 ## **Projects**
 
-### 1. **Solar System Simulation**
-- Simulates planetary motion using Beeman and Euler numerical methods.
-- Visualises orbits, analyses energy conservation, and calculates orbital periods.
-- Written in Python with JSON-based parameter input.
+### 1. **ADC Signal Sampling and Calibration**
+- Real-time analogue signal acquisition using MCP3208 12-bit ADC with Raspberry Pi.
+- Demonstrates Nyquist frequency analysis and aliasing effects in digital signal processing.
+- Implements statistical calibration procedures to quantify and correct systematic measurement errors.
 
-### 2. **Traffic Simulation**
-- Models car movement on a circular road based on density and time steps.
-- Visualises car positions and velocity trends using Python.
-- Analyses the relationship between density and average velocity.
+### 2. **Extremum and Derivative Calculator**
+- A C++ program for calculating derivatives and finding extremum points of mathematical functions.
+- Useful for optimisation problems in physics and engineering.
 
 ### 3. **Numerov Method Project**
 - Implements the Numerov method to solve second-order differential equations.
 - Focuses on applications in quantum mechanics and wave functions.
 - Developed in C++ for high-performance computation.
 
-### 4. **Extremum and Derivative Calculator**
-- A C++ program for calculating derivatives and finding extremum points of mathematical functions.
-- Useful for optimisation problems in physics and engineering.
+### 5. **Solar System Simulation**
+- Simulates planetary motion using Beeman and Euler numerical methods.
+- Visualises orbits, analyses energy conservation, and calculates orbital periods.
+- Written in Python with JSON-based parameter input.
 
-### 5. **ADC Signal Sampling and Calibration**
-- Real-time analogue signal acquisition using MCP3208 12-bit ADC with Raspberry Pi.
-- Demonstrates Nyquist frequency analysis and aliasing effects in digital signal processing.
-- Implements statistical calibration procedures to quantify and correct systematic measurement errors.
+### **4. Semiconductor Bandgap Analysis**
+- Analyses temperature-dependent carrier concentration data using nonlinear curve fitting techniques.
+- Extracts bandgap energy from experimental semiconductor measurements with statistical validation.
+- Implements chi-squared goodness-of-fit testing and uncertainty propagation for robust parameter estimation.
 
+### 6. **Traffic Simulation**
+- Models car movement on a circular road based on density and time steps.
+- Visualises car positions and velocity trends using Python.
+- Analyses the relationship between density and average velocity.
+  
 ---
 
 ## **Languages Used**
 
 This portfolio demonstrates proficiency in the following programming languages:
-- **Python** (55%): Used for simulation-based projects like Solar System Simulation and Traffic Simulation.
-- **C++** (37.9%): Applied to computationally intensive projects such as the Numerov Method and Extremum Calculator.
-- **C** (7.1%): Used for low-level tasks requiring efficiency and control.
+- **Python**: Used for simulation-based projects like Solar System Simulation and Traffic Simulation.
+- **C++**: Applied to computationally intensive projects such as the Numerov Method and Extremum Calculator.
+- **C**: Used for low-level tasks requiring efficiency and control.
 
 ---
 
