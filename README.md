@@ -28,24 +28,20 @@ This portfolio contains a variety of projects that reflect my academic and profe
 - Simulates planetary motion using Beeman and Euler numerical methods.
 - Visualizes orbits, analyzes energy conservation, and calculates orbital periods.
 - Written in Python with JSON-based parameter input.
-- **[View Project Code](https://github.com/SMunro1234/Stan_Munro_Portfolio/tree/main/Solar_System_Simulation)**
 
 ### 2. **Traffic Simulation**
 - Models car movement on a circular road based on density and time steps.
 - Visualizes car positions and velocity trends using Python.
 - Analyzes the relationship between density and average velocity.
-- **[View Project Code](https://github.com/SMunro1234/Stan_Munro_Portfolio/tree/main/Traffic_Simulation)**
 
 ### 3. **Numerov Method Project**
 - Implements the Numerov method to solve second-order differential equations.
 - Focuses on applications in quantum mechanics and wave functions.
 - Developed in C++ for high-performance computation.
-- **[View Project Code](https://github.com/SMunro1234/Stan_Munro_Portfolio/tree/main/Numerov_Method_Project)**
 
 ### 4. **Extremum and Derivative Calculator**
 - A C++ program for calculating derivatives and finding extremum points of mathematical functions.
-- Useful for optimization problems in physics and engineering.
-- **[View Project Code](https://github.com/SMunro1234/Stan_Munro_Portfolio/tree/main/Extremum_Calculator)**
+- Useful for optimisation problems in physics and engineering.
 
 ---
 
