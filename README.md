@@ -38,15 +38,15 @@ This portfolio contains a variety of projects that reflect my academic and profe
 - Focuses on applications in quantum mechanics and wave functions.
 - Developed in C++ for high-performance computation.
 
-### 5. **Solar System Simulation**
-- Simulates planetary motion using Beeman and Euler numerical methods.
-- Visualises orbits, analyses energy conservation, and calculates orbital periods.
-- Written in Python with JSON-based parameter input.
-
 ### **4. Semiconductor Bandgap Analysis**
 - Analyses temperature-dependent carrier concentration data using nonlinear curve fitting techniques.
 - Extracts bandgap energy from experimental semiconductor measurements with statistical validation.
 - Implements chi-squared goodness-of-fit testing and uncertainty propagation for robust parameter estimation.
+
+### 5. **Solar System Simulation**
+- Simulates planetary motion using Beeman and Euler numerical methods.
+- Visualises orbits, analyses energy conservation, and calculates orbital periods.
+- Written in Python with JSON-based parameter input.
 
 ### 6. **Traffic Simulation**
 - Models car movement on a circular road based on density and time steps.
