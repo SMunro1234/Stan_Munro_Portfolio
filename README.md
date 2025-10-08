@@ -43,6 +43,11 @@ This portfolio contains a variety of projects that reflect my academic and profe
 - A C++ program for calculating derivatives and finding extremum points of mathematical functions.
 - Useful for optimisation problems in physics and engineering.
 
+### 5. **ADC Signal Sampling and Calibration**
+- Real-time analogue signal acquisition using MCP3208 12-bit ADC with Raspberry Pi.
+- Demonstrates Nyquist frequency analysis and aliasing effects in digital signal processing.
+- Implements statistical calibration procedures to quantify and correct systematic measurement errors.
+
 ---
 
 ## **Languages Used**
