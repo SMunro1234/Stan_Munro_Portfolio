@@ -1,89 +1,120 @@
-# **Stan Munro Portfolio**
+# ADC Signal Sampling and Calibration
 
-Welcome to my GitHub portfolio! This repository showcases a collection of projects that highlight my expertise in physics, programming, and data analysis. Each project demonstrates my ability to solve complex problems using computational methods, numerical simulations, and automation tools. Below, you’ll find descriptions of the key projects included in this portfolio.
+A Python implementation for sampling analogue signals using the MCP3208 12-bit ADC with Raspberry Pi, featuring real-time data acquisition, Nyquist frequency analysis, and ADC calibration procedures.
 
----
+## Overview
 
-## **Table of Contents**
+This project demonstrates fundamental concepts in data acquisition and handling through:
+- Real-time sampling of periodic analogue signals
+- Nyquist frequency calculations and aliasing demonstration
+- ADC calibration using square wave references
+- Statistical analysis of measurement accuracy
 
-1. [Overview](#overview)
-2. [Projects](#projects)
-3. [Languages Used](#languages-used)
-4. [How to Navigate](#how-to-navigate)
-5. [Skills Demonstrated](#skills-demonstrated)
-6. [Contact Me](#contact-me)
-7. [License](#license)
+## Hardware Requirements
 
----
+- Raspberry Pi 5 with Raspbian Bookworm
+- MCP3208 12-bit ADC (SPI interface)
+- Breadboard and GPIO adapter
+- Bench signal generator (0-3.3V capability)
+- Digital oscilloscope with probe
+- Jumper wires and basic electronics components
 
-## **Overview**
+## Circuit Setup
 
-This portfolio contains a variety of projects that reflect my academic and professional journey as a Physics undergraduate with a strong interest in computational modeling and data-driven solutions.
+### Power Connections
+- Pi 3.3V (pin 1) → MCP3208 VDD (pin 16) and VREF (pin 15)
+- Pi GND (pin 6) → MCP3208 AGND (pin 14) and DGND (pin 9)
 
----
+### SPI Interface
+- Pi SCLK (GPIO 11, pin 23) → MCP3208 SCK (pin 13)
+- Pi MOSI (GPIO 10, pin 19) → MCP3208 DIN (pin 11)
+- Pi MISO (GPIO 9, pin 21) → MCP3208 DOUT (pin 12)
+- Pi CE0 (GPIO 8, pin 24) → MCP3208 CS (pin 10)
 
-## **Projects**
+### Signal Input
+- Signal generator output → MCP3208 CH0 (pin 1)
+- Oscilloscope probe → same signal line for monitoring
 
-### 1. **Solar System Simulation**
-- Simulates planetary motion using Beeman and Euler numerical methods.
-- Visualizes orbits, analyzes energy conservation, and calculates orbital periods.
-- Written in Python with JSON-based parameter input.
+## Key Features
 
-### 2. **Traffic Simulation**
-- Models car movement on a circular road based on density and time steps.
-- Visualizes car positions and velocity trends using Python.
-- Analyzes the relationship between density and average velocity.
+### 1. Signal Sampling
+- Samples 10 Hz sine wave at ~100 Hz sampling rate
+- Calculates sampling statistics (Δt, fs, Nyquist frequency)
+- Visualizes voltage vs. time data
+- Demonstrates proper signal reconstruction
 
-### 3. **Numerov Method Project**
-- Implements the Numerov method to solve second-order differential equations.
-- Focuses on applications in quantum mechanics and wave functions.
-- Developed in C++ for high-performance computation.
+### 2. Nyquist Analysis
+- Calculates theoretical maximum measurable frequency (fs/2)
+- Shows relationship between sampling rate and signal fidelity
+- Provides foundation for understanding aliasing effects
 
-### 4. **Extremum and Derivative Calculator**
-- A C++ program for calculating derivatives and finding extremum points of mathematical functions.
-- Useful for optimisation problems in physics and engineering.
+### 3. ADC Calibration
+- Two-point calibration using square wave references
+- Full-scale (0-3.3V) and half-scale (0-1.65V) measurements
+- Statistical analysis of high/low voltage levels
+- Calibration curve plotting against ideal response
 
-### 5. **ADC Signal Sampling and Calibration**
-- Real-time analogue signal acquisition using MCP3208 12-bit ADC with Raspberry Pi.
-- Demonstrates Nyquist frequency analysis and aliasing effects in digital signal processing.
-- Implements statistical calibration procedures to quantify and correct systematic measurement errors.
+## Technical Implementation
 
----
+### Sampling Algorithm
+```python
+# Real-time voltage sampling with timing analysis
+for i in range(num_samples):
+    voltage = ADC0.analogReadVolt(0)
+    elapsed = time.time() - start_time
+    voltages.append(voltage)
+    timestamps.append(elapsed)
+```
 
-## **Languages Used**
+### Calibration Procedure
+- Separates square wave samples into high/low groups using threshold
+- Calculates statistical means for each voltage level
+- Compares ADC measurements against oscilloscope references
+- Identifies systematic gain and offset errors
 
-This portfolio demonstrates proficiency in the following programming languages:
-- **Python** (55%): Used for simulation-based projects like Solar System Simulation and Traffic Simulation.
-- **C++** (37.9%): Applied to computationally intensive projects such as the Numerov Method and Extremum Calculator.
-- **C** (7.1%): Used for low-level tasks requiring efficiency and control.
+## Results and Analysis
 
----
+The system achieves:
+- **Sampling Rate**: ~95 Hz (limited by Python execution overhead)
+- **Nyquist Limit**: ~47.6 Hz maximum measurable frequency
+- **Calibration Accuracy**: Typically <1% gain error, <50mV offset error
+- **Signal Fidelity**: 9.5 samples per cycle for 10Hz input
 
-## **How to Navigate**
+## Educational Outcomes
 
-Each folder in this repository corresponds to a specific project:
-1. Navigate to the project folder to access source code, documentation, and examples.
-2. Each project includes its own `README.md` file with detailed instructions on installation, usage, and outputs.
+This project demonstrates:
+- **Digital Signal Processing**: Nyquist theorem application
+- **Measurement Science**: Calibration and error analysis
+- **Embedded Systems**: SPI communication and ADC interfacing
+- **Data Analysis**: Statistical processing and visualization
 
----
+## Dependencies
 
-## **Skills Demonstrated**
+```python
+from DAH import MCP3208  # Custom DAH library for MCP3208
+import time
+import matplotlib.pyplot as plt
+```
 
-This portfolio highlights the following skills:
-- Numerical Methods: Beeman integration, Euler method, Numerov method.
-- Programming: Python, C++, C.
-- Data Visualization: Graphical representation of simulations using libraries like `matplotlib`.
-- Physics Applications: Orbital mechanics, traffic flow dynamics, quantum wave function analysis.
-- Automation: Process optimization through algorithmic solutions.
+## Usage
 
----
+1. Set up hardware circuit as described
+2. Configure signal generator for 10 Hz sine wave (0-3.3V)
+3. Run the Python script
+4. Follow prompts for calibration measurements
+5. Analyze generated plots and statistics
 
-## **Contact Me**
+## Applications
 
-📧 Email: [StanMunro1234@gmail.com](mailto:StanMunro1234@gmail.com)  
-📍 Location: London, England  
+This foundational work applies to:
+- Sensor data acquisition systems
+- Scientific instrumentation
+- Real-time monitoring applications
+- Educational demonstrations of ADC principles
 
-Feel free to reach out for collaboration opportunities or inquiries!
+## Future Enhancements
 
----
-
+- Anti-aliasing filter implementation
+- Higher sampling rates using compiled code
+- Multi-channel simultaneous sampling
+- Advanced calibration algorithms
