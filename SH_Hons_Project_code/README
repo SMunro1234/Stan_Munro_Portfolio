@@ -21,11 +21,11 @@ But two kinematic halo candidates are identified: BD+20 2457 (Gaia sub-sample) a
 
 #Repository Structure
 
-APOGEE-notebook.ipynb # APOGEE DR17 cross-match, orbit integration, classification, plots
-GALAH-notebook.ipynb # GALAH DR3 cross-match, orbit integration, classification, plots
-GAIA-notebook.ipynb # Gaia DR3 XP (AspGap) cross-match, orbit integration, classification, plots
-LAMOST-notebook.ipynb # LAMOST DR11 MRS cross-match, orbit integration, classification, plots
-Combined-Position.ipynb # Combined Galactocentric spatial distribution across all surveys
+APOGEE notebook.ipynb # APOGEE DR17 cross-match, orbit integration, classification, plots
+GALAH notebook.ipynb # GALAH DR3 cross-match, orbit integration, classification, plots
+GAIA notebook.ipynb # Gaia DR3 XP (AspGap) cross-match, orbit integration, classification, plots
+LAMOST notebook.ipynb # LAMOST DR11 MRS cross-match, orbit integration, classification, plots
+Combined Position.ipynb # Combined Galactocentric spatial distribution across all surveys
 
 ## Data Requirements
 
