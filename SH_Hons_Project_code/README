@@ -1,1 +1,45 @@
+#SH Honours Project - Chemodynamical Search for Accreted Halo Exoplanet Hosts
+
+Author: Stan Munro  
+Supervisor: Dr. Danny Horta-Darrington  
+Institution: University of Edinburgh  
+March 2026
+
+
+#Project Overview
+
+This repository contains the full analysis pipeline for the Senior Honours project: 
+Do any known exoplanet host stars belong to accreted halo populations as traced by their chemical abundances and kinematic properties?
+
+The project cross-matches the NASA Exoplanet Archive against four major wide-field spectroscopic surveys, APOGEE DR17, GALAH DR3, Gaia DR3 XP (AspGap), 
+and LAMOST DR11 MRS,to derive six-dimensional phase-space coordinates, orbital parameters, and multi-element chemical abundances for known exoplanet host stars. 
+Population membership (thin disc, thick disc, accreted halo) is determined via joint kinematic (Toomre diagram) and chemical ([α/Fe]–[Fe/H] and [Mg/Mn]–[Al/Fe]) 
+classification.
+
+#Key result: No exoplanet host in any of the four surveys is robustly classified as a chemically accreted halo member. 
+Two kinematic halo candidates are identified: BD+20 2457 (Gaia sub-sample) and K2-212 (LAMOST sub-sample).
+
+#Repository Structure
+
+APOGEE-notebook.ipynb # APOGEE DR17 cross-match, orbit integration, classification, plots
+GALAH-notebook.ipynb # GALAH DR3 cross-match, orbit integration, classification, plots
+GAIA-notebook.ipynb # Gaia DR3 XP (AspGap) cross-match, orbit integration, classification, plots
+LAMOST-notebook.ipynb # LAMOST DR11 MRS cross-match, orbit integration, classification, plots
+Combined-Position.ipynb # Combined Galactocentric spatial distribution across all surveys
+
+## Data Requirements
+
+The following input data files are required to run the notebooks. They are **not** included in this repository due to file size. Download links are provided:
+
+| File | Survey | Source |
+|------|--------|--------|
+| `NASA exoplanet Archive (filtered Columns) 1 (Degrees).csv` | NASA Exoplanet Archive | [https://exoplanetarchive.ipac.caltech.edu](https://exoplanetarchive.ipac.caltech.edu) |
+| `apogee_new.csv` | APOGEE DR17 | [https://www.sdss4.org/dr17/](https://www.sdss4.org/dr17/) |
+| `GALAH_DR3_main_catalog.csv` | GALAH DR3 | [https://galah-survey.org/dr3](https://galah-survey.org/dr3) |
+| `GALAH_DR3_dynamics_catalog.csv` | GALAH DR3 VAC | [https://galah-survey.org/dr3](https://galah-survey.org/dr3) |
+| `aspgap_catalog.fits` (or .csv) | Gaia DR3 / AspGap | [https://zenodo.org/record/7945154](https://zenodo.org/record/7945154) |
+| `lamost_mrs_rv.csv` | LAMOST DR11 MRS | [http://www.lamost.org/dr11/](http://www.lamost.org/dr11/) |
+| `lamost_mrs_params.csv` | LAMOST DR11 MRS | [http://www.lamost.org/dr11/](http://www.lamost.org/dr11/) |
+
+---
 
