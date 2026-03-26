@@ -29,17 +29,16 @@ Combined-Position.ipynb # Combined Galactocentric spatial distribution across al
 
 ## Data Requirements
 
-The following input data files are required to run the notebooks. They are **not** included in this repository due to file size. Download links are provided:
+The following input data files are required to run the notebooks. They are NOT included in this repository due to file size. Download links are provided:
 
 | File | Survey | Source |
-|------|--------|--------|
-| `NASA exoplanet Archive (filtered Columns) 1 (Degrees).csv` | NASA Exoplanet Archive | [https://exoplanetarchive.ipac.caltech.edu](https://exoplanetarchive.ipac.caltech.edu) |
-| `apogee_new.csv` | APOGEE DR17 | [https://www.sdss4.org/dr17/](https://www.sdss4.org/dr17/) |
-| `GALAH_DR3_main_catalog.csv` | GALAH DR3 | [https://galah-survey.org/dr3](https://galah-survey.org/dr3) |
-| `GALAH_DR3_dynamics_catalog.csv` | GALAH DR3 VAC | [https://galah-survey.org/dr3](https://galah-survey.org/dr3) |
-| `aspgap_catalog.fits` (or .csv) | Gaia DR3 / AspGap | [https://zenodo.org/record/7945154](https://zenodo.org/record/7945154) |
-| `lamost_mrs_rv.csv` | LAMOST DR11 MRS | [http://www.lamost.org/dr11/](http://www.lamost.org/dr11/) |
-| `lamost_mrs_params.csv` | LAMOST DR11 MRS | [http://www.lamost.org/dr11/](http://www.lamost.org/dr11/) |
+| NASA exoplanet Archive (filtered Columns) 1 (Degrees).csv | NASA Exoplanet Archive | [https://exoplanetarchive.ipac.caltech.edu](https://exoplanetarchive.ipac.caltech.edu) |
+| apogee_new.csv | APOGEE DR17 | [https://www.sdss4.org/dr17/](https://www.sdss4.org/dr17/) |
+| GALAH_DR3_main_catalog.csv | GALAH DR3 | [https://galah-survey.org/dr3](https://galah-survey.org/dr3) |
+| GALAH_DR3_dynamics_catalog.csv | GALAH DR3 VAC | [https://galah-survey.org/dr3](https://galah-survey.org/dr3) |
+| aspgap_catalog.fits (or .csv) | Gaia DR3 / AspGap | [https://zenodo.org/record/7945154](https://zenodo.org/record/7945154) |
+| lamost_mrs_rv.csv | LAMOST DR11 MRS | [http://www.lamost.org/dr11/](http://www.lamost.org/dr11/) |
+| lamost_mrs_params.csv | LAMOST DR11 MRS | [http://www.lamost.org/dr11/](http://www.lamost.org/dr11/) |
 
 ---
 
